@@ -4,11 +4,44 @@
 
 .App-header {
   background-color: #061b46;
-  min-height: 100vh;
+  border: solid;
+  border-color: #061b46;
+  border-radius: 5px;
+  min-height: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: lightgrey;
+}
+
+.colorField {
+  min-height: 50vh;
+  border: solid;
+  border-color: lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: lightgrey;
+}
+
+button {
+  background-color: #061b46;
+  border: solid;
+  border-color: #061b46;
+  border-radius: 5px;
+  color: lightgrey;
+  font-size: calc(10px + 2vmin);
+}
+
+p {
+  background-color: #061b46;
+  border: solid;
+  border-color: #061b46;
+  border-radius: 5px;
+  padding: 5px;
 }

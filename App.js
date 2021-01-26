@@ -1,37 +1,37 @@
-import randomcolor from 'randomcolor';
-import React from 'react';
-import './App.css';
+import randomcolor from "randomcolor";
+import React, { useState } from "react";
+import "./App.css";
 
 export default App;
-
 
 function App() {
   return (
     <>
       <div className="App">
-        <header className="App-header">
-          <RandomColor />
-        </header>
+        <header className="App-header">RANDOM COLOR GENERATOR</header>
+        <body className="App-body">
+          <RandomColoredElement />
+        </body>
       </div>
     </>
   );
 }
 
-function RandomColor() {
-  const [randomColor, setRandomColor] = useState(randomcolor());
+function RandomColoredElement() {
+  const [randomHexColor, setRandomColor] = useState(randomcolor());
   return (
     <div>
-      <div style={{ backgroundColor: randomColor }} className="colorField">
-        <p>{randomColor}</p>
+      <div style={{ backgroundColor: randomHexColor }} className="colorField">
+        <p>{randomHexColor}</p>
       </div>
+      <br />
       <button
         onClick={() => {
           setRandomColor(randomcolor());
         }}
       >
-        Hit this button and get your random color
+        Get your random color
       </button>
-
     </div>
   );
 }
