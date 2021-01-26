@@ -1,21 +1,8 @@
-import randomcolor from "randomcolor";
-import React, { useState } from "react";
-import "./App.css";
+import randomcolor from 'randomcolor';
+import React, { useState } from 'react';
+import './App.css';
 
 export default App;
-
-function App() {
-  return (
-    <>
-      <div className="App">
-        <header className="App-header">RANDOM COLOR GENERATOR</header>
-        <body className="App-body">
-          <RandomColoredElement />
-        </body>
-      </div>
-    </>
-  );
-}
 
 function RandomColoredElement() {
   const [randomHexColor, setRandomColor] = useState(randomcolor());
@@ -32,6 +19,17 @@ function RandomColoredElement() {
       >
         Get your random color
       </button>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">RANDOM COLOR GENERATOR</header>
+      <body className="App-body">
+        <RandomColoredElement />
+      </body>
     </div>
   );
 }
