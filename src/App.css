@@ -18,6 +18,7 @@
 
 .colorField {
   min-height: 50vh;
+
   border: solid;
   border-color: lightgrey;
   border-radius: 5px;
