@@ -1,11 +1,11 @@
-import randomcolor from 'randomcolor';
+import randomColor from 'randomcolor';
 import React, { useState } from 'react';
 import './App.css';
 
 export default App;
 
 function RandomColoredElement() {
-  const [randomHexColor, setRandomColor] = useState(randomcolor());
+  const [randomHexColor, setRandomHexColor] = useState(randomColor());
   return (
     <div>
       <div style={{ backgroundColor: randomHexColor }} className="colorField">
@@ -14,7 +14,7 @@ function RandomColoredElement() {
       <br />
       <button
         onClick={() => {
-          setRandomColor(randomcolor());
+          setRandomHexColor(randomColor());
         }}
       >
         Get your random color
