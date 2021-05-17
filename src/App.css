@@ -1,8 +1,8 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #061b46;
   border: solid;
   border-color: #061b46;
@@ -14,11 +14,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: lightgrey;
-}
+} */
 
-.colorField {
+/* .colorField {
   min-height: 50vh;
-
   border: solid;
   border-color: lightgrey;
   border-radius: 5px;
@@ -28,21 +27,21 @@
   justify-content: center;
   font-size: calc(20px + 2vmin);
   color: lightgrey;
-}
+} */
 
-button {
+/* button {
   background-color: #061b46;
   border: solid;
   border-color: #061b46;
   border-radius: 5px;
   color: lightgrey;
   font-size: calc(10px + 2vmin);
-}
-
+} */
+/*
 p {
   background-color: #061b46;
   border: solid;
   border-color: #061b46;
   border-radius: 5px;
   padding: 5px;
-}
+} */
