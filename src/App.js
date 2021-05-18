@@ -178,11 +178,10 @@ function RandomColoredElement() {
           css={inputStyles}
           type="text"
           placeholder="Width (px)"
-          onKeyDown={(event) => {
+          onChange={(event) => {
             const newWidth = event.target.value;
-            if (event.key === 'Enter') {
-              setBoxWidth(newWidth);
-            }
+
+            setBoxWidth(newWidth);
           }}
         />
         <span css={textStyles}>x</span>
@@ -190,11 +189,14 @@ function RandomColoredElement() {
           css={inputStyles}
           type="text"
           placeholder="Height (px)"
-          onKeyDown={(event) => {
+          // Another option is to attach the change to a certain key
+          // movement, for instance pressing of the Enter key
+          // onKeyDown={(event) => {
+          onChange={(event) => {
             const newHeight = event.target.value;
-            if (event.key === 'Enter') {
-              setBoxHeight(newHeight);
-            }
+            // if (event.key === 'Enter') {
+            setBoxHeight(newHeight);
+            // }
           }}
         />
       </div>
