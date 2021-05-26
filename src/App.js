@@ -1,5 +1,8 @@
+
+
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+
 import randomColor from 'randomcolor';
 import { useState } from 'react';
 import './App.css';
@@ -17,7 +20,7 @@ const appStyles = css`
   padding: 50px 0;
 
   p {
-    background-color: #061b46;
+    background-color: ${ourBlue};
     border-radius: 5px;
     padding: 5px;
     font-size: calc(5px + 4vmin);
@@ -104,6 +107,7 @@ const positionStyles = css`
   margin-bottom: 30px;
 `;
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function RandomColoredElement() {
   const [randomHexColor, setRandomHexColor] = useState(randomColor());
   const [boxWidth, setBoxWidth] = useState(300);
@@ -119,6 +123,7 @@ function RandomColoredElement() {
             backgroundColor: randomHexColor,
             width: `${boxWidth}px`,
             height: `${boxHeight}px`,
+
           }}
           css={boxStyles}
         >
